@@ -6,6 +6,6 @@ authors = ["Taylor Plewe <tplewe@outlook.com>"]
 description = "Acts as the client for an already-provided axe Accessibility Linter server executable"
 repository = "https://github.com/taylorplewe/zed-axe-linter"
 
-[language-servers.axe]
+[language_servers.axe]
 name = "Axe Accessibility Linter"
-languages = ["html", "vue"]
+languages = ["HTML", "Vue.js"]
