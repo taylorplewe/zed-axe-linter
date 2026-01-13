@@ -1,8 +1,5 @@
 use std::{env, fs};
-
 use zed_extension_api as zed;
-
-struct AxeAccessibilityLinter {}
 
 fn get_language_server_binary_path(worktree: &zed::Worktree) -> String {
     if let Ok(path) = env::var("AXE_LS_PATH") {
@@ -15,6 +12,8 @@ fn get_language_server_binary_path(worktree: &zed::Worktree) -> String {
     }
     return "axe-ls".to_string();
 }
+
+struct AxeAccessibilityLinter {}
 
 impl zed::Extension for AxeAccessibilityLinter {
     fn new() -> Self {

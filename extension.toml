@@ -8,4 +8,4 @@ repository = "https://github.com/taylorplewe/zed-axe-linter"
 
 [language_servers.axe]
 name = "Axe Accessibility Linter"
-languages = ["HTML", "Vue.js"]
+languages = ["HTML", "Markdown", "Vue.js", "Angular", "TSX", "Liquid"]
