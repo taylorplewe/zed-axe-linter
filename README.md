@@ -5,4 +5,12 @@ This is merely the [Zed](https://zed.dev) client for an *already-existing* copy 
 
 ### Instructions on how to acquire the language server executable 👉 [tplewe.com/axe-linter-in-neovim](https://tplewe.com/axe-linter-in-neovim)
 
+As stated by the official VS Code extension, the supported filetypes are:
+- HTML
+- Angular
+- Vue
+- React
+- React Native
+- Liquid templates
+
 <img width="1184" height="560" alt="image" src="https://github.com/user-attachments/assets/81d4d594-457d-47eb-b9a2-56c46398de49" />
