@@ -3,6 +3,10 @@ The [Axe Accessibility Linter](https://marketplace.visualstudio.com/items?itemNa
 
 This is merely the [Zed](https://zed.dev) client for an *already-existing* copy of the Axe Accessibility Linter langauge server executable. You will need that executable in order for the extension to work!
 
+The extension can only find the executable if either
+1. it is called `axe-ls` and lives on your PATH, or
+1. it is located via the environment variable "`AXE_LS_PATH`"
+
 ### Instructions on how to acquire the language server executable 👉 [tplewe.com/axe-linter-in-neovim](https://tplewe.com/axe-linter-in-neovim)
 
 As stated by the official VS Code extension, the supported filetypes are:
