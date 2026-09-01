@@ -1,10 +1,10 @@
 # Axe Accessibiliy Linter extension for Zed
 The [Axe Accessibility Linter](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter) VS Code extension is a handy tool that warns you of accessibility violations in code as you're writing it.
 
-This is merely the [Zed](https://zed.dev) client for an *already-existing* copy of the Axe Accessibility Linter langauge server executable. You will need that executable in order for the extension to work!
+This is merely the [Zed](https://zed.dev) client for an *already-existing* copy of the Axe Accessibility Linter language server JavaScript script. You will need that script in order for the extension to work!
 
-The extension can only find the executable if either
-1. it is called `axe-ls` and lives on your PATH, or
+The extension can only find the server script if:
+1. it is called `axe-ls.js` and lives on your PATH, or
 1. it is located via the environment variable "`AXE_LS_PATH`"
 
 ### Instructions on how to acquire the language server executable 👉 [tplewe.com/axe-linter-in-neovim](https://tplewe.com/axe-linter-in-neovim)
