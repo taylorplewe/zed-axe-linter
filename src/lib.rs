@@ -1,16 +1,13 @@
-use std::{env, fs};
+use std::env;
 use zed_extension_api as zed;
 
 fn get_language_server_binary_path(worktree: &zed::Worktree) -> String {
     if let Ok(path) = env::var("AXE_LS_PATH") {
-        if fs::metadata(&path).map_or(false, |metadata| metadata.is_file()) {
-            return path;
-        }
-    }
-    if let Some(path) = worktree.which("axe-ls") {
+        return path;
+    } else if let Some(path) = worktree.which("axe-ls.js") {
         return path;
     }
-    return "axe-ls".to_string();
+    "axe-ls.js".to_string()
 }
 
 struct AxeAccessibilityLinter {}
@@ -26,8 +23,11 @@ impl zed::Extension for AxeAccessibilityLinter {
         worktree: &zed::Worktree,
     ) -> zed::Result<zed::Command> {
         Ok(zed::Command {
-            command: get_language_server_binary_path(worktree),
-            args: vec!["--stdio".to_string()],
+            command: zed::node_binary_path().unwrap(),
+            args: vec![
+                get_language_server_binary_path(worktree),
+                "--stdio".to_string(),
+            ],
             env: Default::default(),
         })
     }

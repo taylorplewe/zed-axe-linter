@@ -1,6 +1,6 @@
 id = "axe"
 name = "Axe Accessibility Linter"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Taylor Plewe <tplewe@outlook.com>"]
 description = "Acts as the client for an already-provided axe Accessibility Linter server executable"
